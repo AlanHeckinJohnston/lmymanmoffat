@@ -1,0 +1,487 @@
+@media screen and (min-width:800px)
+{
+	*{font-size:28px;}
+	#wrapper{
+		background:#f7f7f7;
+		position:absolute;
+		top: 0; bottom: 0; left: 0; right: 0;
+	}
+	#main{
+		padding:20px; 
+		position:relative; 
+		display:block; 
+		margin:10px auto; 
+		width:75%; 
+		text-align:center; 
+		padding:5px; 
+		padding-top:80px; 
+	}
+	#transactionWrapper{
+		position:relative;
+		width:100%;
+		max-width:300px;
+		min-width:220px;
+		z-index:1;
+		margin:10px auto;
+	}
+	@keyframes openTransactionBox{
+		0%{
+			transform: rotate(90deg);
+			background:#f7f7f7;
+		}
+		80%{
+			transform: scale(0.8);
+		}
+		90%{
+			transform:scale(1.2);
+		}
+		100%{
+			transform:scale(1);
+			background:#f7f7f7;
+		}
+	}
+	@keyframes TransactionBox{
+		0%{
+			width:0;
+			margin-left:50%;
+		}
+		100%{
+			width:100%;
+			margin-left:0;
+		}
+
+	}
+	.button{
+		height:60px;
+		font-size:32px;
+		border:4px solid #141414;
+		border-radius:4px;
+		display:block;
+		font-family:Arial;
+		transition:background 1s, transform 1s;
+		cursor:pointer;
+		text-align:center;
+		animation-name:openTransactionBox;
+		animation-duration:1s;
+		overflow:hidden;
+		white-space: nowrap;
+		background:#f7f7f7;
+		text-align:center;
+		margin:10px auto;
+	}
+
+	.button:hover{
+		background:#A3A3A3;
+		transform:scale(1.2);
+	}
+	.button>.text{
+		margin-top:10px;
+		position:relative;
+	
+	}
+	#newT{
+		height:0;
+		overflow:hidden;
+	}
+	.option{
+		width:300px;
+		display:inline-block;
+		position:relative;
+		text-align:left;
+	}
+	.open{
+		display:block;
+		margin:5px;
+		width:90%;
+	}
+	#submitWrapper{
+		width:40%;
+		margin:10px auto;
+	}
+	#submit{
+		visibility:hidden;
+	}
+	#oldT{
+		background-color:#8688e0;
+		padding:20px;
+	}
+	#group{
+		background-color:white;
+		min-height:300px;
+		max-height:700px;
+		overflow-y:scroll;
+		margin-top:50px;
+	}
+	#bw{
+		width:90px;
+	}
+	.am{
+		display:inline-block;
+		position:relative;
+		width:40%;
+	}
+	.desc{
+		display:inline-block;
+		position:relative;
+		width:30%;
+	}
+	.edit{
+		width:20%;
+		color:blue;
+		text-decoration:underline;
+		cursor:pointer;
+	}
+	.li{
+		margin:5px;
+		text-align:left;
+	}
+	.g{
+		background:#bcc8db;
+	}
+	.remaining
+	{
+		border: 4px solid #282fff;
+		color:#282fff;
+		width:150px;
+		height:100px;
+		display:inline-block;
+		position:relative;
+		margin:40px;
+		
+	}
+	.remaining_bar
+	{
+		border-bottom:4px solid #282fff;
+		height:30px;
+		
+	}
+	#screen{
+		opacity:0.6;
+		background:#636363;
+		position:fixed;
+		z-index:1;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+	}
+	#editBox{
+		left:50%;
+		right:50%;
+		top:40%;
+		bottom:25%;
+		position:fixed;
+		margin:auto;
+		background:#f9f9f9;
+		border-radius:15px;
+		z-index:2;
+		overflow:hidden;
+	}
+	#editBoxWrapper{
+		position:absolute;
+		width:100%;
+		height:100%;
+	}
+	#edBoxClose{
+		position:relative;
+		text-align:right;
+		text-decoration:underline;
+		color:Blue;
+		cursor:pointer;
+		margin-right:20px;
+	}
+	.editLine{
+		margin:5px;
+		display:block;
+		padding:2px;
+		text-align:left;
+	}
+	.ledit{
+		width:30%;
+		display:inline-block;
+		margin-left:0px;
+	}
+	.redit{
+		width:20%;
+		display:inline-block;
+	}
+	.redit>input{
+		width:90%;
+	}
+	#openTransaction,#ec{
+		margin:20px;
+	}
+	@keyframes open{
+		0%{
+			left:50%;
+			right:50%;
+			top:50%;
+			bottom:50%;
+		}
+		100%{
+			left:30%;
+			right:30%;
+			top:20%;
+			bottom:30%;
+		}
+			
+	}
+	@keyframes close{
+		0%{
+			left:30%;
+			right:30%;
+			top:20%;
+			bottom:30%;
+			border:0;
+		}
+		100%{
+			left:50%;
+			right:50%;
+			top:50%;
+			bottom:50%;
+
+		}
+	}
+}
+@media screen and (max-width:799px)
+{
+	*{font-size:28px;}
+	#wrapper{
+		background:#f7f7f7;
+		position:absolute;
+		top: 0; bottom: 0; left: 0; right: 0;
+	}
+	#main{
+		padding:20px; 
+		position:relative; 
+		display:block; 
+		margin:10px auto; 
+		width:75%; 
+		text-align:center; 
+		padding:5px; 
+		padding-top:80px; 
+	}
+	#transactionWrapper{
+		position:relative;
+		width:100%;
+		max-width:300px;
+		min-width:220px;
+		z-index:1;
+		margin:10px auto;
+	}
+	@keyframes openTransactionBox{
+		0%{
+			transform: rotate(90deg);
+			background:#f7f7f7;
+		}
+		80%{
+			transform: scale(0.8);
+		}
+		90%{
+			transform:scale(1.2);
+		}
+		100%{
+			transform:scale(1);
+			background:#f7f7f7;
+		}
+	}
+	@keyframes TransactionBox{
+		0%{
+			width:0;
+			margin-left:50%;
+		}
+		100%{
+			width:100%;
+			margin-left:0;
+		}
+
+	}
+	.button{
+		height:60px;
+		font-size:32px;
+		border:4px solid #141414;
+		border-radius:4px;
+		display:block;
+		font-family:Arial;
+		transition:background 1s, transform 1s;
+		cursor:pointer;
+		text-align:center;
+		animation-name:openTransactionBox;
+		animation-duration:1s;
+		overflow:hidden;
+		white-space: nowrap;
+		background:#f7f7f7;
+		text-align:center;
+		margin:10px auto;
+	}
+
+	.button:hover{
+		background:#A3A3A3;
+		transform:scale(1.2);
+	}
+	.button>.text{
+		margin-top:10px;
+		position:relative;
+	
+	}
+	#newT{
+		height:0;
+		overflow:hidden;
+	}
+	.option{
+		width:300px;
+		display:inline-block;
+		position:relative;
+		text-align:left;
+	}
+	.open{
+		display:block;
+		margin:5px;
+		width:90%;
+	}
+	#submit{
+		visibility:hidden;
+		position:relative;
+	}
+	#oldT{
+		background-color:#8688e0;
+		padding:20px;
+	}
+	#group{
+		background-color:white;
+		min-height:300px;
+		max-height:700px;
+		overflow-y:scroll;
+		margin-top:50px;
+	}
+	#bw{
+		width:90px;
+	}
+	.am{
+		display:inline-block;
+		position:relative;
+		width:40%;
+	}
+	.desc{
+		display:inline-block;
+		position:relative;
+		width:30%;
+	}
+	.edit{
+		width:20%;
+		color:blue;
+		text-decoration:underline;
+		cursor:pointer;
+	}
+	.li{
+		margin:5px;
+		text-align:left;
+	}
+	.g{
+		background:#bcc8db;
+	}
+	.remaining
+	{
+		border: 4px solid #282fff;
+		color:#282fff;
+		width:150px;
+		height:100px;
+		display:inline-block;
+		position:relative;
+		margin:40px;
+		
+	}
+	.remaining_bar
+	{
+		border-bottom:4px solid #282fff;
+		height:30px;
+		
+	}
+	#screen{
+		opacity:0.6;
+		background:#636363;
+		position:fixed;
+		z-index:1;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+	}
+	#editBox{
+		left:50%;
+		right:50%;
+		top:40%;
+		bottom:25%;
+		position:fixed;
+		margin:auto;
+		background:#f9f9f9;
+		border-radius:15px;
+		z-index:2;
+		overflow:hidden;
+	}
+	#editBoxWrapper{
+		position:absolute;
+		width:100%;
+		height:100%;
+	}
+	#edBoxClose{
+		position:relative;
+		text-align:right;
+		text-decoration:underline;
+		color:Blue;
+		cursor:pointer;
+		margin-right:20px;
+	}
+	.editLine{
+		margin:5px;
+		display:block;
+		padding:2px;
+		text-align:left;
+	}
+	.ledit{
+		width:30%;
+		display:inline-block;
+		margin-left:0px;
+	}
+	.redit{
+		width:20%;
+		display:inline-block;
+	}
+	.redit>input{
+		width:90%;
+	}
+	#openTransaction,#ec{
+		margin:20px;
+	}
+	@keyframes open{
+		0%{
+			left:50%;
+			right:50%;
+			top:50%;
+			bottom:50%;
+		}
+		100%{
+			left:30%;
+			right:30%;
+			top:20%;
+			bottom:30%;
+		}
+			
+	}
+	@keyframes close{
+		0%{
+			left:30%;
+			right:30%;
+			top:20%;
+			bottom:30%;
+			border:0;
+		}
+		100%{
+			left:50%;
+			right:50%;
+			top:50%;
+			bottom:50%;
+
+		}
+	}
+}
